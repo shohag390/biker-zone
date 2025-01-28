@@ -15,7 +15,213 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="md:container md:mx-auto">
+    <!-- Header Section -->
+    <header class="h-[100vh]">
+        <!-- navbar section -->
+        <div class="navbar bg-white text-[#000] font-medium md:px-[100px] px-[20px] h-[12vh]">
+            <div class="flex items-center justify-between w-full">
+                <a href="#" class="text-xl">BikeDekho</a>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-full p-2 shadow">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="flex items-center gap-[30px]">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li> <a href="#" class="py-[10px] px-[35px] bg-[#E76F51] text-[#ffff] rounded-lg">Login</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- banner Section -->
+        <section class="md:px-[100px] px-[20px] pb-[20px] bg-[white] w-full h-[88vh]">
+
+            <div class="carousel w-full h-full bg-[#fdf1ee] rounded-lg">
+                <div id="slide1" class="carousel-item relative w-full">
+
+                    <div class="absolute h-full w-full top-0 left-0 flex items-center justify-between">
+                        <div class="w-1/2 pl-[100px]">
+                            <h1 class="text-[#000000] text-[40px] font-bold leading-[42px] pb-[10px]">Ride-on R15 V4
+                                <br> with
+                                Smile
+                            </h1>
+                            <p class="text-[gray] pb-[30px]">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class="py-[12px] px-[50px] bg-[#E76F51] text-[#ffff] rounded-lg">Purchase</button>
+                        </div>
+                        <div class="w-1/2 h-full flex items-center justify-center">
+                            <img src="./images/slider/bike1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute left-[40px] right-[40px] top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="">❮</a>
+                        <a href="#slide2" class="">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+
+                    <div class="absolute h-full w-full top-0 left-0 flex items-center justify-between">
+                        <div class="w-1/2 pl-[100px]">
+                            <h1 class="text-[#000000] text-[40px] font-bold leading-[42px] pb-[10px]">Ride-on R15 V4
+                                <br> with
+                                Smile
+                            </h1>
+                            <p class="text-[gray] pb-[30px]">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class="py-[12px] px-[50px] bg-[#E76F51] text-[#ffff] rounded-lg">Purchase</button>
+                        </div>
+                        <div class="w-1/2 h-full flex items-center justify-center">
+                            <img src="./images/slider/bike2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute left-[40px] right-[40px] top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="">❮</a>
+                        <a href="#slide3" class="">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+
+                    <div class="absolute h-full w-full top-0 left-0 flex items-center justify-between">
+                        <div class="w-1/2 pl-[100px]">
+                            <h1 class="text-[#000000] text-[40px] font-bold leading-[42px] pb-[10px]">Ride-on R15 V4
+                                <br> with
+                                Smile
+                            </h1>
+                            <p class="text-[gray] pb-[30px]">Amet minim mollit non deserunt ullamco
+                                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                            <button class="py-[12px] px-[50px] bg-[#E76F51] text-[#ffff] rounded-lg">Purchase</button>
+                        </div>
+                        <div class="w-1/2 h-full flex items-center justify-center">
+                            <img src="./images/slider/bike3.png" alt="">
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute left-[40px] right-[40px] top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="">❮</a>
+                        <a href="#slide3" class="">❯</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Section -->
+    <main class="bg-white">
+
+        <section class="md:px-[100px] px-[20px] md:py-[50px]">
+            <div class="text-center flex flex-col items-center justify-center pb-[50px]">
+                <h1 class="text-[#000000] text-[30px] font-bold">Fetured Bikes In This Year</h1>
+                <h4 class="text-[#e76f51] pb-[5px]">Best bike collection</h4>
+                <div class="h-[2px] w-[100px] bg-[#E76F51] rounded-full"></div>
+            </div>
+
+            <div class="flex items-center justify-between ">
+                <div>
+                    <img class="grayscale-[1]" src="./images/others/feature-bike.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/others/feature-bike.png" alt="">
+                </div>
+                <div>
+                    <img class="grayscale-[1]" src="./images/others/feature-bike.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Latest News -->
+        <section class="md:px-[100px] px-[20px] md:py-[50px] py-[30px]">
+            <div class="text-center pb-[40px]">
+                <h1 class="text-[#000000] text-[30px] font-bold">Latest News</h1>
+            </div>
+
+            <div class="w-full grid grid-cols-3 gap-[30px]">
+                <div class="card w-full shadow-md p-[20px] border-[1px] border-[#000000]">
+                    <figure>
+                        <img class="w-full h-[250px]" src="./images/others/latest1.png" alt="Shoes" />
+                    </figure>
+                    <div class="py-[10px]">
+                        <h2 class="card-title text-[#000000] text-[23px] pb-[8px]">Ducati XDIAVEL S-73</h2>
+                        <p class="text-[gray] pb-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                            fermentum
+                            amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="py-[10px] px-[30px] bg-[#E76F51] text-[#ffff] rounded-lg">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full shadow-md p-[20px] border-[1px] border-[#000000]">
+                    <figure>
+                        <img class="w-full h-[250px]" src="./images/others/latest2.png" alt="Shoes" />
+                    </figure>
+                    <div class="py-[10px]">
+                        <h2 class="card-title text-[#000000] text-[23px] pb-[8px]">Motorcycles & Scooters</h2>
+                        <p class="text-[gray] pb-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                            fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="py-[10px] px-[30px] bg-[#E76F51] text-[#ffff] rounded-lg">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full shadow-md p-[20px] border-[1px] border-[#000000]">
+                    <figure>
+                        <img class="w-full h-[250px]" src="./images/others/latest3.png" alt="Shoes" />
+                    </figure>
+                    <div class="py-[10px]">
+                        <h2 class="card-title text-[#000000] text-[23px] pb-[8px]">2021 Honda CBR500R</h2>
+                        <p class="text-[gray] pb-[20px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                            fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions">
+                            <button class="py-[10px] px-[30px] bg-[#E76F51] text-[#ffff] rounded-lg">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FAQ Section -->
+
+        <section class="md:px-[100px] px-[20px] md:py-[50px] py-[30px]">
+            <div class="text-center pb-[40px]">
+                <h1 class="text-[#000000] text-[30px] font-bold">Frequently Asked <span
+                        class="text-[#e76f51]">Questions</span></h1>
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer></footer>
 
 </body>
 
